@@ -27,7 +27,7 @@ function startGame(){
         showCards.textContent="Cards: "
         for (i=0; i<cardArray.length; i++){
             showCards.textContent+= cardArray[i] + " " }
-           sumOfCards.textContent="Sum: " + sum 
+           sumOfCards.textContent="Sum: " + sum  
             if (sum<21){
                gameStatus.textContent="Do you want a new card?"
             }
