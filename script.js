@@ -1,10 +1,17 @@
 let sumOfCards=document.getElementById("sum")
 let showCards=document.getElementById("cards")
 let gameStatus=document.getElementById("game-status")
+let playerEl = document.getElementById("player-el")
 let blackJack=false
 let isAlive=false
 let cardArray=[]
-
+let player = {
+    name: "Astha",
+    chips: 250
+}
+playerEl.textContent = player.name + ": $" + player.chips
+console.log(playerEl)
+ 
 function randomNumber(){
     let number= Math.floor(Math.random()*13)+1
     if (number===1){
@@ -16,6 +23,7 @@ function randomNumber(){
     }
 }
 function startGame(){
+  
     isAlive=true
     firstCard=randomNumber()
     secondCard=randomNumber()
@@ -44,7 +52,7 @@ function startGame(){
     
 
 
-    function newGame(){
+    function newCard(){
         if (isAlive===true && blackJack===false) {
             let card=randomNumber()
             cardArray.push(card)
