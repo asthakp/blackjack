@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+  background-color: forestgreen;
+}
+#blackjack {
+  font-weight: bold;
+  font-size: 60px;
+  color: rgb(233, 169, 8);
+}
+p {
+  font-size: 36px;
+  color: antiquewhite;
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  color: forestgreen;
+  background-color: darkgoldenrod;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin: 4px auto;
+
+  width: 250px;
+}
